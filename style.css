@@ -124,3 +124,24 @@ footer {
 .attribution a {
     color: hsl(75, 94%, 57%);
 }
+
+/**** Responsive design version mobile ****/
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .card {
+        width: 90%;
+    }
+
+    .social__network {
+        width: 80vw;
+    }
+
+    footer {
+        font-size: 18px;
+        line-height: 1.4;
+    }
+}
