@@ -1,0 +1,126 @@
+/**** Reset ****/
+
+*,
+::before,
+::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/**** Style général de la page ****/
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: "Inter", sans-serif;
+    font-size: 16px;
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 100%);
+}
+
+header,
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 15px;
+}
+
+h1,
+footer p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 30px;
+}
+
+.main__content {
+    flex-grow: 1;
+}
+
+.card {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px auto;
+    padding: 40px;
+    border-radius: 10px;
+    background-color: hsl(0, 0%, 12%);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    box-shadow: 0 1px 6px 0 hsl(75, 94%, 57%);
+}
+
+.card__header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.avatar {
+    width: 80px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 35px;
+}
+
+.location {
+    color: hsl(75, 94%, 57%);
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.jobb {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.social__network {
+    width: 25vw;
+    background-color: hsl(0, 0%, 20%);
+    margin: 10px;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.social__network a {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+
+.social__network:hover a {
+    color: hsl(0, 0%, 8%);
+}
+
+.social__network:hover {
+    background-color: hsl(75, 94%, 57%);
+    cursor: pointer;
+}
+
+footer {
+    font-size: 20px;
+}
+
+.attribution a {
+    color: hsl(75, 94%, 57%);
+}
